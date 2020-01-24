@@ -4,7 +4,8 @@
   "description": "A service that process form submits from several sources",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require @babel/polyfill --require @babel/register --recursive --exit",
+    "babel-node": "babel-node app.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,9 @@
     "moment-timezone": "0.5.27"
   },
   "devDependencies": {
+    "@babel/core": "7.8.3",
+    "@babel/polyfill": "7.8.3",
+    "@babel/register": "7.8.3",
     "chai": "4.2.0",
     "chai-http": "4.3.0",
     "eslint": "6.8.0",

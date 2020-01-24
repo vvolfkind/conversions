@@ -1,9 +1,7 @@
-const log = require("./log");
-const respond = require("./respond");
-const isValidJson = require("./isValidJson");
+const log = require('./log');
+const reply = require('./reply');
 
 module.exports = {
-    log,
-    respond,
-    isValidJson
-}
+  log,
+  reply,
+};

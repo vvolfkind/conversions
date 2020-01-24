@@ -15,6 +15,15 @@ module.exports = {
     ecmaVersion: 2018,
   },
   rules: {
-    "no-console": "off"
+    "no-console": "off",
+    "global-require": "off",
+    "no-underscore-dangle": [
+      "warn",
+      {
+        "allow": true,
+        "allowPrefix": true,
+        "allowSuffix": false 
+      }
+    ]
   },
 };
