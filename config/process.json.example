@@ -1,0 +1,27 @@
+{
+  "apps": [
+    {
+      "name": "Zoho-REST",
+      "script": "./server.js",
+      "instances": "1",
+      "exec_mode": "cluster",
+      "watch": true,
+      "autorestart": true,
+      "ignore_watch": [
+        "log",
+        ".git",
+        "node_modules"
+      ],
+      "instance_var": "1",
+      "env": {
+        "NODE_ENV": "development",
+        "GATEKEEPER_BEARER_TOKEN": "",
+        "PORT": ,
+        "APP_COUNTRY": ""
+      },
+      "error_file": "./log/error.log",
+      "out_file": "./log/out.log",
+      "merge_logs": true
+    }
+  ]
+}
